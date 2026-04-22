@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main(){
+    
+    int a,b;
+    int dobro,triplo;
+    int produto,soma;
+    int quadrado;
+    
+    printf("digite o primeiro numero: \n",a);
+    scanf("%d",&a);
+    printf("digite o segundo número: \n");
+    scanf("%d",&b);
+    
+    soma = a + b;
+    produto = a * b;
+    dobro = a * 2,b * 2;
+    triplo = a * 3;
+    quadrado = a * a, b * b;
+    
+    printf("a soma dos dois numero e: %d\n",soma);
+    printf("o produto dos dois numeros e: %d\n",produto);
+    printf("o dobro dos dois numeros sao: %d ,%d\n",a * 2, b * 2);
+    printf("o triplo dos dois numeros sao: %d ,%d\n",a * 3, b * 3);
+    printf("o quadrado dos dois numeros sao: %d ,%d\n",a * a, b * b);
+    
+    return 0;
+    
+    
+    
+}
