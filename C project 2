@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main (){
+    float av1,av2,media;
+    
+    printf("qual sua nota av1? ");
+    scanf("%f",&av1);
+    printf("qual a sua nota av2? ");
+    scanf("%f",&av2);
+    
+    media = (av1 + av2) / 2;
+    
+    if (media > 6 && media <=10){
+        printf("voce passou! Sua media e: %f",media);
+    }
+    else if (media > 10){
+        printf("media invalida, insira numeros coerentes a sua nota.");
+    }
+    else if (media < 0){
+        printf("media invalida, insira numeros coerentes a sua nota.");
+    }
+    else{
+        printf("voce nao passou, sua media e: %f",media);
+    }
+    
+    
+}
