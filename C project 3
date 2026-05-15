@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    float altura;
+    float peso;
+    float imc;
+    
+    printf("\n----detalhes OMS----\n");
+    printf("\nse seu imc estiver abaixo de '18.5', entao voce esta abaixo do peso\n");
+    printf("\nse seu imc estiver entre '18.5 e 24.9', entao seu peso esta normal\n");
+    printf("\nse seu imc estiver entre '25.0 e 29.9', entao voce esta acima do peso\n");
+    printf("\nse seu imc der acima de '30.0' entao esta com obesidade\n");
+    
+    printf("digite a sua altura: ");
+    scanf("%f",&altura);
+    printf("digite o seu peso: ");
+    scanf("%f",&peso);
+    
+    
+    imc = peso / (altura * altura);
+
+    printf("\nseu imc e: %.1f\n", imc);
+    
+
+    if(imc < 18.5){
+        printf("voce esta abaixo do peso!\n");
+    }
+    else if(imc >= 18.5 && imc < 24.9){
+        printf("seu peso esta normal!");
+    }
+    else if(imc >= 25 && imc < 30.0){
+        printf("voce esta acima do peso!");
+    }
+    else{
+        printf("obesidade");
+    }
+    
+    //meu codigo nao tava respondendo direito, motivo? usei ',' ao inves de '.'
+    
+    
+    return 0;
+}
